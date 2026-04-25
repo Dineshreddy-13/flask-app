@@ -32,7 +32,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker run -d -p 5000:5000 $DOCKER_HUB_USER/$IMAGE_NAME:latest'
+                sh 'docker run -d -p 5200:5000 $DOCKER_HUB_USER/$IMAGE_NAME:latest'
             }
         }
     }

@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         IMAGE_NAME      = "myapp"
-        DOCKER_HUB_USER = "<urk23cs1263>"
+        DOCKER_HUB_USER = "urk23cs1263"
     }
     stages {
         stage('Clone') {
